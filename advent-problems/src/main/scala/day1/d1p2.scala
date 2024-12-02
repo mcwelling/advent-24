@@ -1,7 +1,9 @@
+package day1
+
 import scala.collection.mutable
 import scala.io.{BufferedSource, Source}
 
-class p2(val fileName: String) {
+class d1p2(val fileName: String) {
   private val leftList = mutable.ListBuffer[Int]()
   private val rightFrequency = mutable.HashMap[Int, Int]()
 

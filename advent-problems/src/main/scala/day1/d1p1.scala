@@ -1,7 +1,9 @@
+package day1
+
 import scala.collection.mutable
 import scala.io.{BufferedSource, Source}
 
-class p1(val fileName: String) {
+class d1p1(val fileName: String) {
   private val heap1 = mutable.PriorityQueue[Int]()
   private val heap2 = mutable.PriorityQueue[Int]()
 
