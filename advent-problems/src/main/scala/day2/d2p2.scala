@@ -15,7 +15,7 @@ class d2p2(val fileName: String) {
   }
 
   def slidingWindowEval(row: Array[String]): Int = {
-    val ascending = row(0).toInt > row(1).toInt
+    val ascending = row(0).toInt > row(1).toInt // edge case where first two elem are eq
     val comparisons = row.sliding(2,1)
     var mistakes = 0
     val tolerance = 1

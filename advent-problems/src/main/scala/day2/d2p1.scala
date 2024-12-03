@@ -16,7 +16,7 @@ class d2p1(val fileName: String) {
 
   // okay the sliding window is sick
   def slidingWindowEval(row: Array[String]): Int = {
-    val ascending = row(0).toInt > row(1).toInt
+    val ascending = row(0).toInt > row(1).toInt // edge case where first two elem are eq
     val comparisons = row.sliding(2,1)
     for (elem <- comparisons) {
       val diff = elem(0).toInt - elem(1).toInt
