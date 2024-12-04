@@ -23,6 +23,7 @@ class d3p2(val fileName: String) {
       .map { mulExp => numPairDetectionRegex.findFirstIn(mulExp).getOrElse(() => "").toString }
       .map { numPairAsString => numPairAsString.split(",") }
       .foreach { numStringArray => total += (numStringArray(0).toInt * numStringArray(1).toInt) }
+    bufferedSource.close()
     println(total)
   }
 
